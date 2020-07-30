@@ -32,7 +32,7 @@ function signOut() {
 //Initialize firebase.
 function initFirebase(){
   // TODO
-   firebase.initializeApp({
+  firebase.initializeApp ({
     apiKey: "AIzaSyAC_F5GOFuPe0Wguhnt1C6GBJvDw67NixQ",
     authDomain: "scrapchat-913e0.firebaseapp.com",
     databaseURL: "https://scrapchat-913e0.firebaseio.com",
@@ -43,6 +43,7 @@ function initFirebase(){
     measurementId: "G-JTY9ZZMKLN"
   });
 }
+
 // Initiate firebase auth.
 function initFirebaseAuth() {
   // TODO 3: Initialize Firebase.
@@ -71,7 +72,16 @@ function isUserSignedIn() {
 // Saves a new message on the Firebase DB.
 function saveMessage(messageText) {
   // TODO 7: Push a new message to Firebase.
-  
+    return firebase.firestore().collection('messages').add({
+    name: getUserName(),
+    text: messageText,
+    profilePicUrl: getProfilePicUrl(),
+    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+  }).catch(function(error) {
+    console.error('Error writing new message to Firebase Database', error);
+  });
+
+
 }
 
 // Loads chat messages history and listens for upcoming ones.
