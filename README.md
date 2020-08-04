@@ -1,4 +1,6 @@
-# chat_app_starter
+# Scrapchat
+Welcome to Scrapchat a where you able to post
+Pictures you would like to share.
 
 ## Directions
 To run this project, you will need to complete the following workshops (found on Notion):
@@ -12,3 +14,16 @@ To run this project, you will need to complete the following workshops (found on
 
 ## Credits
 This tutorial was adapted from Google Codelab. 
+The Colors were through W3Schools.
+
+# Languages Used
+- HTML
+- CSS
+- Javascript
+
+# What I learned
+- Deploy local host
+- Create a set of Rules through Firebase
+- Create a Cloud to Save Messages
+- Debug in Console (Google Chrome)
+
