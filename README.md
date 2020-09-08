@@ -1,7 +1,7 @@
 # Scrapchat
 Welcome to Scrapchat a where you able to post
 Pictures you would like to share.
-[Click here to see my plane Page]https://scrapchat-913e0.web.app
+[Click here to see my plane Page](https://scrapchat-913e0.web.app)
 
 ## Directions
 To run this project, you will need to complete the following workshops (found on Notion):
